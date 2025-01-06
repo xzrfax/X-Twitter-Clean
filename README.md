@@ -13,24 +13,34 @@ Automatically delete tweets and remove reposts from your X/Twitter account. This
 - Python 3.6 or higher
 - Chrome browser
 - ChromeDriver matching your Chrome version
+- pip (comes with Python on Windows, use pip3 on macOS)
 
 ## Installation
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/X-Twitter-Clean.git
+git clone https://github.com/xzrfax/X-Twitter-Clean.git
 cd X-Twitter-Clean
 ```
 
 2. Create and activate a virtual environment (recommended):
 ```bash
+# Windows:
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate
+
+# macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 3. Install required packages:
 ```bash
+# Windows:
 pip install -r requirements.txt
+
+# macOS/Linux:
+pip3 install -r requirements.txt
 ```
 
 4. Install ChromeDriver:
@@ -41,7 +51,11 @@ pip install -r requirements.txt
 
 1. Run the script:
 ```bash
+# Windows:
 python twitter_delete.py
+
+# macOS/Linux:
+python3 twitter_delete.py
 ```
 
 2. Enter your X/Twitter username when prompted
